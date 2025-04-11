@@ -1,0 +1,138 @@
+main {
+  margin: 0 auto;
+}
+
+.img-base {
+  display: block;
+}
+
+.img-hover {
+  display: none;
+}
+
+a {
+  &:hover {
+    .img-base {
+      display: none;
+    }
+
+    .img-hover {
+      display: block;
+    }
+  }
+}
+
+.standard-text {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-main);
+    line-height: 1.2;
+    font-weight: bold;
+  }
+
+  h1,
+  h2 {
+    margin-bottom: 18px;
+    @include up-lg {
+      margin-bottom: 24px;
+    }
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 15px;
+    @include up-lg {
+      margin-bottom: 18px;
+    }
+  }
+
+  .subtitle {
+    font-size: var(--fs-14);
+  }
+
+  h1 {
+    font-size: var(--fs-42);
+  }
+
+  h2 {
+    font-size: var(--fs-32);
+  }
+
+  h3 {
+    font-size: var(--fs-26);
+  }
+
+  h4 {
+    font-size: var(--fs-22);
+  }
+
+  h5 {
+    font-size: var(--fs-18);
+  }
+
+  h6 {
+    font-size: var(--fs-16);
+  }
+
+  p {
+    font-size: var(--fs-16);
+    line-height: 1.2;
+    margin-bottom: 18px;
+    color: $color-red;
+  }
+}
+
+.standard-text *:last-child {
+  margin-bottom: 0;
+}
+
+// Gaps
+
+.gap-20 {
+  row-gap: 40px;
+}
+
+.gap-40 {
+  row-gap: 40px;
+}
+.gap-60 {
+  row-gap: 40px;
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 10px;
+  column-gap: 10px;
+  margin-top: 18px;
+
+  @include up-lg {
+    margin-top: 24px;
+  }
+
+  & + .btn-wrapper {
+    margin-top: 10px;
+  }
+  .btn {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 2px solid $color-black;
+    font-size: var(--fs-14);
+    font-weight: 500;
+    &.btn-red {
+      border: 2px solid $color-red;
+      background-color: $color-red;
+      color: $color-white;
+      &:hover {
+        background-color: $color-white;
+        color: $color-red;
+      }
+    }
+  }
+}
