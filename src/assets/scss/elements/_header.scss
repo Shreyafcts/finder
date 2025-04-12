@@ -2,46 +2,21 @@
   position: fixed;
   padding: 12px 0;
   width: 100%;
-  &__logo {
-    img {
-      max-width: 120px;
-    }
+  top: 0;
+  & + section {
+    margin-top: var(--header--height);
   }
-  .navbar {
-    justify-content: center;
-    @include down-xl {
-      position: relative;
-      display: flex;
-      
-    }
-    .menu {
+  &__logo {
+    @include down-lg {
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 20px;
-      li {
-        font-size: var(--fs-16);
-        font-weight: 500;
-        color: $color-black;
-        a {
-          text-decoration: none;
-          color: inherit;
-        }
-      }
-    }
-  }
-  &__icons {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 20px;
-    .btn-wrapper {
-      margin-top: 0;
+      gap: 10px;
     }
     img {
-      width: 20px;
-      height: 20px;
-      object-fit: contain;
+      max-width: 120px;
+      @include down-sm {
+        max-width: 100px;
+      }
     }
     .menu-trigger {
       display: none;
@@ -56,7 +31,7 @@
       z-index: 40;
       margin-left: 20px;
 
-      @include down-xl {
+      @include down-lg {
         display: inline-block;
       }
 
@@ -96,6 +71,87 @@
           }
         }
       }
+    }
+  }
+  &__sidenav {
+    @include up-lg {
+      display: none;
+    }
+    position: fixed;
+    top: var(--header--height);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-white;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 55;
+    padding: 30px 20px;
+
+    &.open {
+      transform: translateX(0);
+    }
+
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start !important;
+
+      .menu {
+        flex-direction: column;
+        gap: 15px;
+        padding-left: 0;
+        align-items: start !important;
+
+        li {
+          font-size: var(--fs-18);
+          a {
+            display: block;
+            width: 100%;
+            color: $color-black;
+            padding: 10px 0;
+          }
+        }
+      }
+    }
+  }
+  .navbar {
+    justify-content: center;
+    @include down-lg {
+      position: relative;
+      display: flex;
+    }
+    .menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      li {
+        font-size: var(--fs-16);
+        font-weight: 500;
+        color: $color-black;
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+    }
+  }
+  &__icons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+    @include down-lg {
+      gap: 10px;
+    }
+    .btn-wrapper {
+      margin-top: 0;
+    }
+    img {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
     }
   }
 }
