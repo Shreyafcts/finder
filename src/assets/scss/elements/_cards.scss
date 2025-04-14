@@ -1,0 +1,25 @@
+.cards {
+  &__body {
+    ._img {
+      margin-bottom: 16px;
+    }
+    h4 {
+      margin-bottom: 8px;
+    }
+    .cards__icon-text {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      .item {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        img {
+          width: 14px;
+          height: 14px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
