@@ -10,15 +10,26 @@ body {
   width: 100%;
   height: 100%;
 }
+[data-theme="light"] {
+  --bg-theme: #fff;
+  --text-theme: #000000;
+}
+
+[data-theme="dark"] {
+  --bg-theme: #111827;
+  --text-theme: #fff;
+  .header {
+    background: var(--bg-theme);
+  }
+}
 
 body {
   font-family: var(--font-main);
-  color: $color-black;
+  color: var(--text-theme) !important;
   font-weight: var(--font-weight-main);
-  background: $color-white;
+  background: var(--bg-theme) !important;
   line-height: 1.2;
   font-style: normal;
-  background: transparent;
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;

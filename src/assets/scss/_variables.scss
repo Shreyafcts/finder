@@ -5,16 +5,23 @@
   --font-weight-main: normal;
   --color-red: #d85151;
   --color-black: #000000;
+  --color-dark-grey: #4e5562;
+  --color-light-black: #111827;
+  --color-grey: #cad0d9;
 }
 
 $color-white: #fff;
 $color-red: var(--color-red);
 $color-black: var(--color-black);
+$color-dark-grey: var(--color-dark-grey);
+$color-light-black: var(--color-light-black);
+$color-grey: var(--color-grey);
 
 // bg colors generator
 $bg-colors: (
   dark: #000,
   grey: #f4f4f4,
+  light-black: #111827,
 );
 
 ._bg {
@@ -56,7 +63,7 @@ $text-sizes: (
   "14": 14px,
   "16": 16px,
   "18": 18px,
-  "22": 22px,
+  "20": 20px,
   "26": 26px,
   "32": 32px,
   "42": 42px,
@@ -69,8 +76,8 @@ $text-sizes-tablet: (
   "14": 14px,
   "16": 16px,
   "18": 17px,
-  "22": 20px,
-  "26": 22px,
+  "20": 20px,
+  "26": 20px,
   "32": 26px,
   "42": 36px,
   "56": 45px,
@@ -82,9 +89,9 @@ $text-sizes-mob: (
   "14": 14px,
   "16": 16px,
   "18": 17px,
-  "22": 19px,
+  "20": 19px,
   "26": 21px,
-  "32": 22px,
+  "32": 20px,
   "42": 28px,
   "56": 34px,
   "60": 34px,

@@ -3,6 +3,8 @@
   padding: 12px 0;
   width: 100%;
   top: 0;
+  background: $color-white;
+  z-index: 9;
   & + section {
     margin-top: var(--header--height);
   }
@@ -129,7 +131,6 @@
       li {
         font-size: var(--fs-16);
         font-weight: 500;
-        color: $color-black;
         a {
           text-decoration: none;
           color: inherit;

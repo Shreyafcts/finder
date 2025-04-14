@@ -1,9 +1,12 @@
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import headerLogo from '../../public/img/header-logo.svg';
+import footerLogo from '../../public/img/footerlogo.svg';
 import themeIcon from '../../public/img/light.svg';
+import darkIcon from '../../public/img/dark.svg';
 import accountIcon from '../../public/img/account.svg';
 import useScreenSize from '../utility/useScreenSize';
+import { useTheme } from '../context/ThemeProvider';
 
 
 const menus = [
@@ -28,10 +31,10 @@ const Header = () => {
     const [navs] = useState(menus);
     const [menuOpen, setMenuOpen] = useState(false);
     const screenSize = useScreenSize();
+    const { toggleTheme, darkMode } = useTheme();
     const handleMenuTrigger = () => {
         setMenuOpen((prev) => !prev);
     }
-
     return (
         <>
             <header className="header">
@@ -44,7 +47,7 @@ const Header = () => {
                                     <span></span>
                                     <span></span>
                                 </div>
-                                <img src={headerLogo} alt="" />
+                                {darkMode ? (<img src={footerLogo} alt="" />) : (<img src={headerLogo} alt="" />)}
                             </div>
                             <div className={`header__sidenav${menuOpen ? ' open' : ''}`}>
                                 <div className="navbar">
@@ -79,9 +82,8 @@ const Header = () => {
                         </div>
                         <div className="col-7 col-lg-3">
                             <div className="header__icons">
-                                <NavLink to="#">
-                                    <img src={themeIcon} alt="" />
-                                </NavLink>
+                                {darkMode ? (<img src={darkIcon} alt="" onClick={toggleTheme} />) :
+                                    <img src={themeIcon} alt="" onClick={toggleTheme} />}
                                 <NavLink to="#">
                                     <img src={accountIcon} alt="" />
                                 </NavLink>
