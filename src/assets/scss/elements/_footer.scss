@@ -63,7 +63,9 @@
     }
   }
   &__sub {
-    padding-top: 72px;
+    margin-top: 50px !important;
+    border-top: 1px solid $color-dark-grey;
+    padding-top: 40px;
     .footer__social {
       display: flex;
       align-items: center;

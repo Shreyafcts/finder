@@ -2,6 +2,7 @@ import { hotels } from "../data/hotels";
 import starIcon from '../../public/img/star.svg';
 import mapIcon from '../../public/img/map.svg';
 import costIcon from '../../public/img/cost.svg';
+import { NavLink } from "react-router-dom";
 
 const Vacationspot = () => {
     return (
@@ -9,8 +10,11 @@ const Vacationspot = () => {
             <section className="cards standard-text _pv-100 _bg-white">
                 <div className="container">
                     <div className="row _pb-50">
-                        <div className="col-12">
+                        <div className="col-12 cards__head">
                             <h2>Popular vacation spots</h2>
+                            <div class="btn-wrapper mt-0">
+                                <NavLink to="#" class="link link-text">View All</NavLink>
+                            </div>
                         </div>
                     </div>
                     <div className="row gap-20">

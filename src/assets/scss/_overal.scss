@@ -24,7 +24,7 @@ body {
 }
 
 body {
-  font-family: var(--font-main);
+  font-family: $font-main !important;
   color: var(--text-theme) !important;
   font-weight: var(--font-weight-main);
   background: var(--bg-theme) !important;

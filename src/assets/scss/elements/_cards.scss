@@ -1,4 +1,12 @@
 .cards {
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      margin-bottom: 0;
+    }
+  }
   &__body {
     ._img {
       margin-bottom: 16px;

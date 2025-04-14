@@ -688,7 +688,7 @@ body {
 }
 
 body {
-  font-family: var(--font-main);
+  font-family: "Inter 28pt", sans-serif !important;
   color: var(--text-theme) !important;
   font-weight: var(--font-weight-main);
   background: var(--bg-theme) !important;
@@ -875,6 +875,24 @@ a:hover .img-hover {
 .btn-wrapper .btn.btn-red:hover {
   background-color: #fff;
   color: var(--color-red);
+}
+.btn-wrapper .link {
+  padding: 0;
+  font-size: var(--fs-16);
+  font-weight: 600;
+  line-height: 24px;
+  position: relative;
+}
+.btn-wrapper .link::after {
+  position: absolute;
+  background-image: url("../../../../public/img/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+  width: 6px;
+  height: 10px;
+  right: 0;
+  top: 50%;
 }
 
 .header {
@@ -1171,6 +1189,14 @@ a:hover .img-hover {
   font-weight: 400;
 }
 
+.cards__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cards__head h2 {
+  margin-bottom: 0;
+}
 .cards__body ._img {
   margin-bottom: 16px;
 }
@@ -1258,7 +1284,9 @@ a:hover .img-hover {
   }
 }
 .footer__sub {
-  padding-top: 72px;
+  margin-top: 50px !important;
+  border-top: 1px solid var(--color-dark-grey);
+  padding-top: 40px;
 }
 .footer__sub .footer__social {
   display: flex;

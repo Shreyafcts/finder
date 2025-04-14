@@ -134,4 +134,22 @@ a {
       }
     }
   }
+  .link {
+    padding: 0;
+    font-size: var(--fs-16);
+    font-weight: 600;
+    line-height: 24px;
+    position: relative;
+    &::after {
+      position: absolute;
+      background-image: url("../../../../public/img/arrow.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right center;
+      width: 6px;
+      height: 10px;
+      right: 0;
+      top: 50%;
+    }
+  }
 }

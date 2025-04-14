@@ -60,7 +60,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="row footer__sub gap-20 _pb-50">
+                    <div className="row footer__sub justify-content-between gap-20 _pb-50">
                         <div className="col-lg-4">
                             <p>Need help?<strong>Contact us</strong></p>
                         </div>
