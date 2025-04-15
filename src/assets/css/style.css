@@ -697,6 +697,9 @@ body {
 [data-theme=dark] .small-card ._img {
   background: #1d2735;
 }
+[data-theme=dark] .cards ._category {
+  background: #1d2735;
+}
 [data-theme=dark] .cta-row {
   background-color: #251e2b;
 }
@@ -904,7 +907,7 @@ a:hover .img-hover {
 .btn-wrapper .link::after {
   position: absolute;
   content: "";
-  background-image: url("../../../../img/side-arrow.svg");
+  background-image: url("../../../public/img/side-arrow.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
