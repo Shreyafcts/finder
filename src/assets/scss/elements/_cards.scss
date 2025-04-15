@@ -7,10 +7,10 @@
       margin-bottom: 0;
     }
   }
+  ._img {
+    margin-bottom: 16px;
+  }
   &__body {
-    ._img {
-      margin-bottom: 16px;
-    }
     h4 {
       margin-bottom: 8px;
     }
@@ -27,6 +27,31 @@
           height: 14px;
           object-fit: contain;
         }
+        p {
+          span {
+            color: $color-dark-grey;
+          }
+        }
+      }
+    }
+    ._category {
+      padding: 2px 10px;
+      background: $color-mint;
+      text-align: center;
+      width: fit-content;
+      margin-bottom: 12px;
+      border-radius: 2px;
+      span {
+        font-size: var(--fs-16);
+        font-weight: 500;
+      }
+    }
+  }
+  &._activity {
+    .cards__body {
+      padding: 16px;
+      .cards__icon-text {
+        margin-bottom: 16px;
       }
     }
   }

@@ -20,6 +20,21 @@ body {
   --text-theme: #fff;
   .header {
     background: var(--bg-theme);
+    &__logo {
+      .menu-trigger {
+        span {
+          background-color: var(--text-theme);
+        }
+      }
+    }
+  }
+  .small-card {
+    ._img {
+      background: #1d2735;
+    }
+  }
+  .cta-row {
+    background-color: #251e2b;
   }
 }
 

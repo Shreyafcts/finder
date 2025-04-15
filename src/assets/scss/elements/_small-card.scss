@@ -1,0 +1,35 @@
+.small-card {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  ._img {
+    padding: 16px 24px;
+    border-radius: 8px;
+    background: $color-mint;
+  }
+  &__info {
+    h5 {
+      margin-bottom: 4px;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 4px;
+      img {
+        width: 14px;
+        height: 14px;
+        object-fit: contain;
+      }
+      p {
+        font-size: var(--fs-14);
+      }
+    }
+    ._icon-text {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+  }
+}

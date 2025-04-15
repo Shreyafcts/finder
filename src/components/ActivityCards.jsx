@@ -1,39 +1,38 @@
-import { hotels } from "../data/hotels";
+import { activities } from '../data/activities';
 import starIcon from '../../public/img/star.svg';
 import mapIcon from '../../public/img/map.svg';
-import costIcon from '../../public/img/cost.svg';
-import Headline from "./Headline";
+import Headline from './Headline';
 
-
-const Vacationspot = ({ maxPost }) => {
+const ActivityCards = ({ maxPost }) => {
     return (
         <>
-            <section className="cards standard-text _pv-100 _bg-white">
+            <section className="cards _activity standard-text _pv-100 _bg-white">
                 <div className="container">
-                    <Headline title="Popular vacation spots" />
+                    <Headline title="Popular activities" />
                     <div className="row gap-20">
-                        {hotels.slice(0, maxPost).map((el, index) => {
+                        {activities.slice(0, maxPost).map((el, index) => {
                             return (
-                                <div className="col-lg-4" key={index}>
+                                <div className="col-lg-3" key={index}>
                                     <div className="_img">
                                         <img src={el.img} alt="" />
                                     </div>
                                     <div className="cards__body">
+                                        <div className="_category">
+                                            <span>{el.category}</span>
+                                        </div>
                                         <h4>{el.name}</h4>
+                                        <p>{el.description}</p>
                                         <div className="cards__icon-text">
                                             <div className="item">
                                                 <img src={starIcon} alt="" />
                                                 <p>{el.rating} <span>({el.totalReviews})</span></p>
                                             </div>
                                             <div className="item">
-                                                <img src={costIcon} alt="" />
-                                                <p>{el.cost}</p>
-                                            </div>
-                                            <div className="item">
                                                 <img src={mapIcon} alt="" />
                                                 <p>{el.location}</p>
                                             </div>
                                         </div>
+                                        <h5>${el.price}</h5>
                                     </div>
                                 </div>
                             )
@@ -44,4 +43,5 @@ const Vacationspot = ({ maxPost }) => {
         </>
     )
 }
-export default Vacationspot;
+
+export default ActivityCards;

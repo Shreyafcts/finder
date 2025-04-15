@@ -8,6 +8,8 @@
   --color-dark-grey: #4e5562;
   --color-light-black: #111827;
   --color-grey: #cad0d9;
+  --color-mint: #eef1f6;
+  --color-pink: #fbeeee;
 }
 
 $color-white: #fff;
@@ -16,12 +18,14 @@ $color-black: var(--color-black);
 $color-dark-grey: var(--color-dark-grey);
 $color-light-black: var(--color-light-black);
 $color-grey: var(--color-grey);
+$color-mint: var(--color-mint);
 
 // bg colors generator
 $bg-colors: (
   dark: #000,
   grey: #f4f4f4,
   light-black: #111827,
+  pink: #fbeeee,
 );
 
 ._bg {
