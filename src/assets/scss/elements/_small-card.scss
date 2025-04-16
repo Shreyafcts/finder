@@ -6,6 +6,12 @@
     padding: 16px 24px;
     border-radius: 8px;
     background: $color-mint;
+    &.toplist {
+      background: $color-white;
+    }
+    &.place {
+      padding: 0;
+    }
   }
   &__info {
     h5 {

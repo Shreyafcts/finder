@@ -1,6 +1,8 @@
 
 import eat1 from '../../public/img/eat-1.svg';
 import eat2 from '../../public/img/eat-2.svg';
+import eat3 from '../../public/img/eat-3.svg';
+import eat4 from '../../public/img/eat-4.svg';
 
 export const restaurantlist = [
     {
@@ -147,5 +149,41 @@ export const restaurantlist = [
         cost: 25,
         location: "1.4 km from center",
     },
+    {
+        topRestaurant: [
+            {
+                img: eat3,
+                name: "Mado",
+                rating: 4.9,
+                totalReviews: 836,
+                cost: 25,
+                location: "1.4 km from center",
+            },
+            {
+                img: eat4,
+                name: "Mado",
+                rating: 4.9,
+                totalReviews: 836,
+                cost: 25,
+                location: "1.4 km from center",
+            },
+            {
+                img: eat3,
+                name: "TacoTime",
+                rating: 4.9,
+                totalReviews: 836,
+                cost: 25,
+                location: "1.4 km from center",
+            },
+            {
+                img: eat4,
+                name: "Mado",
+                rating: 4.9,
+                totalReviews: 836,
+                cost: 25,
+                location: "1.4 km from center",
+            },
+        ],
+    }
 
 ]

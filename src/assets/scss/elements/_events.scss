@@ -1,0 +1,50 @@
+.events {
+  .slick-slider {
+    .slick-list {
+    }
+    .slick-track {
+      overflow: visible;
+    }
+  }
+  &__card {
+    position: relative;
+    aspect-ratio: 16/8;
+    ._img {
+      position: relative;
+      height: 100%;
+      img {
+        height: inherit;
+      }
+    }
+    ._text {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: 80px;
+      @include down-md {
+        padding: 20px;
+      }
+      .icon-text {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 10px;
+        .item {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          img {
+            width: 14px;
+            height: 14px;
+            object-fit: contain;
+          }
+          p {
+            span {
+              color: $color-dark-grey;
+            }
+          }
+        }
+      }
+    }
+  }
+}

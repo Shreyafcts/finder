@@ -41,6 +41,11 @@ body {
   .cta-row {
     background-color: #251e2b;
   }
+  .best-city {
+    &__container {
+      background: #1d2735;
+    }
+  }
 }
 
 body {
@@ -49,6 +54,7 @@ body {
   font-weight: var(--font-weight-main);
   background: var(--bg-theme) !important;
   line-height: 1.2;
+  overflow-x: hidden;
   font-style: normal;
   margin: 0;
   padding: 0;
@@ -100,6 +106,7 @@ figure {
 img {
   width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 
 .main {

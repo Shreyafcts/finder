@@ -17,7 +17,9 @@
     "bootstrap": "^5.3.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router-dom": "^7.5.0"
+    "react-router-dom": "^7.5.0",
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
@@ -31,5 +33,4 @@
     "globals": "^15.15.0",
     "sass": "^1.86.3"
   }
-  
 }
