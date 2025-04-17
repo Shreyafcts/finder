@@ -39,4 +39,36 @@
       }
     }
   }
+  .slick-arrow {
+    padding: 30px;
+    background-color: $color-white;
+    border-radius: 50%;
+    border: 1px solid $color-grey;
+    font-size: 0;
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    background-image: url("../../../public/img/side-arrow.svg");
+    background-position: center center;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    transition: $ease300;
+    &::before {
+      content: "";
+    }
+    &:hover {
+      background-color: $color-white;
+      border: none;
+    }
+
+    &.slick-prev {
+      right: calc(50% + 50px);
+      left: auto;
+    }
+
+    &.slick-next {
+      right: 50%;
+      left: auto;
+    }
+  }
 }

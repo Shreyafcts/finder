@@ -8,6 +8,7 @@ const Events = () => {
         slidesToShow: 1.5,
         infinite: false,
         dots: false,
+        arrows: true,
         draggable: true,
         swipe: true,
         touchMove: true,

@@ -48,6 +48,16 @@
     }
   }
   &._activity {
+    ._activity-box {
+      border: 1px solid $color-grey;
+      border-radius: 8px;
+    }
+    ._img {
+      img {
+        height: inherit;
+        border-radius: 8px 8px 0 0;
+      }
+    }
     .cards__body {
       padding: 16px;
       .cards__icon-text {
