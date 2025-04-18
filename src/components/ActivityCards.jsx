@@ -1,6 +1,5 @@
 import { activities } from '../data/activities';
-import starIcon from '../../public/img/star.svg';
-import mapIcon from '../../public/img/map.svg';
+import IconText from './IconText';
 import Headline from './Headline';
 import SlickSlider from './SlickSlider';
 
@@ -28,16 +27,7 @@ const ActivityCards = ({ maxPost }) => {
                                                 </div>
                                                 <h4>{el.name}</h4>
                                                 <p>{el.description}</p>
-                                                <div className="cards__icon-text">
-                                                    <div className="item">
-                                                        <img src={starIcon} alt="" />
-                                                        <p>{el.rating} <span>({el.totalReviews})</span></p>
-                                                    </div>
-                                                    <div className="item">
-                                                        <img src={mapIcon} alt="" />
-                                                        <p>{el.location}</p>
-                                                    </div>
-                                                </div>
+                                                <IconText rating={el.rating} reviews={el.totalReviews} location={el.location} />
                                                 <h5>${el.price}</h5>
                                             </div>
                                         </div>

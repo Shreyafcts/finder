@@ -9,6 +9,9 @@
   }
   ._img {
     margin-bottom: 16px;
+    img {
+      border-radius: 8px;
+    }
   }
   &__body {
     h4 {

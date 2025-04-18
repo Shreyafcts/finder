@@ -1,7 +1,6 @@
 
 import starIcon from '../../public/img/star.svg';
-import mapIcon from '../../public/img/map.svg';
-import costIcon from '../../public/img/cost.svg';
+import IconText from './IconText';
 
 const SmallCards = ({ list, type }) => {
     const { img, name, rating, totalReviews, cost, location } = list;
@@ -18,16 +17,7 @@ const SmallCards = ({ list, type }) => {
                         <img src={starIcon} alt="" />
                         <p>{rating} <span>({totalReviews})</span></p>
                     </div>
-                    <div className="_icon-text">
-                        <div className="item">
-                            <img src={costIcon} alt="" />
-                            <p>{cost}</p>
-                        </div>
-                        <div className="item">
-                            <img src={mapIcon} alt="" />
-                            <p>{location}</p>
-                        </div>
-                    </div>
+                    <IconText cost={cost} location={location} />
                 </div>
             </div>
         </>

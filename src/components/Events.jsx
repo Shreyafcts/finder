@@ -20,6 +20,12 @@ const Events = () => {
                     slidesToShow: 1,
                 },
             },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 0.8,
+                },
+            },
         ]
     }
     return (

@@ -6,6 +6,9 @@
     padding: 16px 24px;
     border-radius: 8px;
     background: $color-mint;
+    img {
+      border-radius: 8px;
+    }
     &.toplist {
       background: $color-white;
     }

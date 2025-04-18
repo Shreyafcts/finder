@@ -3,6 +3,23 @@
   .slick-slider {
     .slick-list {
       overflow: visible;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        border: 1px solid $color-grey;
+        width: 80%;
+        height: 110%;
+        z-index: -1;
+        border-radius: 8px;
+        right: 50%;
+        transform: translateX(-50%);
+        top: -20px;
+        left: 50%;
+        @include down-sm {
+          top: -12px;
+        }
+      }
     }
     .slick-track {
       //overflow: visible;
@@ -32,6 +49,7 @@
       }
       img {
         height: inherit;
+        border-radius: 8px;
       }
     }
     ._text {

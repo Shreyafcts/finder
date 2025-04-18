@@ -3,6 +3,7 @@ import starIcon from '../../public/img/star.svg';
 import mapIcon from '../../public/img/map.svg';
 import costIcon from '../../public/img/cost.svg';
 import Headline from "./Headline";
+import IconText from "./IconText";
 import SlickSlider from "./SlickSlider";
 
 const Vacationspot = () => {
@@ -21,7 +22,8 @@ const Vacationspot = () => {
                                         </div>
                                         <div className="cards__body">
                                             <h4>{el.name}</h4>
-                                            <div className="cards__icon-text">
+                                            <IconText rating={el.rating} reviews={el.totalReviews} cost={el.cost} location={el.location} />
+                                            {/* <div className="cards__icon-text">
                                                 <div className="item">
                                                     <img src={starIcon} alt="" />
                                                     <p>{el.rating} <span>({el.totalReviews})</span></p>
@@ -34,7 +36,7 @@ const Vacationspot = () => {
                                                     <img src={mapIcon} alt="" />
                                                     <p>{el.location}</p>
                                                 </div>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 )

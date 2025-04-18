@@ -30,6 +30,10 @@
     }
   }
   &__img {
+    @include down-lg {
+      max-width: calc(var(--container) / 12 * 8);
+      margin: auto;
+    }
     @include up-lg {
       margin-top: -15px;
     }

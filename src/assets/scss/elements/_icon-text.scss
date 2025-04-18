@@ -1,0 +1,21 @@
+.icon-text {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    img {
+      width: 14px;
+      height: 14px;
+      object-fit: contain;
+    }
+    p {
+      span {
+        color: $color-dark-grey;
+      }
+    }
+  }
+}

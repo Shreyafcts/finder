@@ -8,6 +8,7 @@ import ActivityCards from "./components/ActivityCards";
 import Cta from "./components/Cta";
 import BestOfCity from "./components/BestOfCity";
 import Events from "./components/Events";
+import NewPlaces from "./components/NewPlaces";
 
 const Home = () => {
     return (
@@ -18,6 +19,7 @@ const Home = () => {
             <ActivityCards maxPost={4} />
             <OffersList maxPost={3} />
             <Restaurant maxPost={9} />
+            <NewPlaces />
             <BestOfCity />
             <Events />
             <Cta />

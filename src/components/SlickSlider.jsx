@@ -18,6 +18,10 @@ const SlickSlider = ({ children, settings: customSliderSettings }) => {
                 settings: {
                     slidesToShow: 2,
                     dots: true,
+                    draggable: true,
+                    swipe: true,
+                    touchMove: true,
+                    swipeToSlide: true,
                 },
             },
             {
@@ -25,6 +29,11 @@ const SlickSlider = ({ children, settings: customSliderSettings }) => {
                 settings: {
                     slidesToShow: 1,
                     dots: true,
+                    dots: true,
+                    draggable: true,
+                    swipe: true,
+                    touchMove: true,
+                    swipeToSlide: true,
                 },
             },
         ],

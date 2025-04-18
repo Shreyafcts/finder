@@ -6,6 +6,7 @@ import themeIcon from '../../public/img/light.svg';
 import darkIcon from '../../public/img/dark.svg';
 import accountIcon from '../../public/img/account.svg';
 import useScreenSize from '../utility/useScreenSize';
+import addIcon from '../../public/img/add.svg';
 import { useTheme } from '../context/ThemeProvider';
 
 
@@ -88,7 +89,7 @@ const Header = () => {
                                     <img src={accountIcon} alt="" />
                                 </NavLink>
                                 <div className="btn-wrapper">
-                                    <NavLink to="#" className="btn btn-red"> {screenSize.width < 991 ? `+ Add` : `Add business`}</NavLink>
+                                    <NavLink to="#" className="btn btn-red"><img src={addIcon} alt="" /> {screenSize.width < 991 ? `Add` : `Add business`}</NavLink>
                                 </div>
                             </div>
 

@@ -104,7 +104,7 @@
 }
 @media (max-width: 575.98px) {
   :root {
-    --fs-14: 10px;
+    --fs-14: 12px;
   }
 }
 @media (max-width: 575.98px) {
@@ -694,6 +694,9 @@ body {
 [data-theme=dark] .header__logo .menu-trigger span {
   background-color: var(--text-theme);
 }
+[data-theme=dark] .header__sidenav {
+  background: var(--bg-theme);
+}
 [data-theme=dark] .small-card ._img {
   background: #1d2735;
 }
@@ -885,7 +888,7 @@ a:hover .img-hover {
   padding: 10px 20px;
   border-radius: 50px;
   border: 2px solid var(--color-black);
-  font-size: var(--fs-14);
+  font-size: var(--fs-16);
   font-weight: 500;
 }
 .btn-wrapper .btn.btn-red {
@@ -1049,6 +1052,7 @@ a:hover .img-hover {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  margin-bottom: 0;
 }
 .header .navbar .menu li {
   font-size: var(--fs-16);
@@ -1134,8 +1138,8 @@ a:hover .img-hover {
   }
 }
 .hero__container img {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -1213,6 +1217,7 @@ a:hover .img-hover {
   display: block;
   font-size: var(--fs-16);
   font-weight: 400;
+  line-height: 24px;
 }
 
 .cards__head {
@@ -1225,6 +1230,9 @@ a:hover .img-hover {
 }
 .cards ._img {
   margin-bottom: 16px;
+}
+.cards ._img img {
+  border-radius: 8px;
 }
 .cards__body h4 {
   margin-bottom: 8px;
@@ -1285,6 +1293,9 @@ a:hover .img-hover {
   padding: 16px 24px;
   border-radius: 8px;
   background: var(--color-mint);
+}
+.small-card ._img img {
+  border-radius: 8px;
 }
 .small-card ._img.toplist {
   background: #fff;
@@ -1395,7 +1406,7 @@ a:hover .img-hover {
   }
 }
 .footer__sub .footer__social img {
-  width: 32px;
+  width: 22px;
 }
 
 .best-city h3 {
@@ -1479,33 +1490,38 @@ a:hover .img-hover {
   text-indent: -9999px;
 }
 .slick-slider .slick-arrow {
-  padding: 30px;
+  padding: 20px;
   background-color: #fff;
   border-radius: 50%;
   border: 1px solid var(--color-grey);
   font-size: 0;
-  position: absolute;
   z-index: 5;
-  bottom: 0;
-  background-image: url("../../../public/img/side-arrow.svg");
-  background-position: center center;
-  background-size: 15px;
-  background-repeat: no-repeat;
+  top: unset;
+  bottom: -120px;
+  background-image: url("../../../public/img/side-arrow.svg") !important;
+  background-position: center center !important;
+  background-size: 7px !important;
+  background-repeat: no-repeat !important;
   transition: all 0.3s ease;
+}
+@media (max-width: 991.98px) {
+  .slick-slider .slick-arrow {
+    bottom: -90px;
+  }
 }
 .slick-slider .slick-arrow::before {
   content: "";
 }
 .slick-slider .slick-arrow:hover {
-  background-color: #fff;
-  border: none;
+  background-color: var(--color-grey);
 }
 .slick-slider .slick-arrow.slick-prev {
-  right: calc(50% + 50px);
+  right: 50%;
   left: auto;
+  background-image: url("../../../public/img/prev.svg") !important;
 }
 .slick-slider .slick-arrow.slick-next {
-  right: 50%;
+  right: calc(50% - 50px);
   left: auto;
 }
 
@@ -1547,6 +1563,12 @@ a:hover .img-hover {
 .cta__img {
   height: 100%;
 }
+@media (max-width: 991.98px) {
+  .cta__img {
+    max-width: calc(var(--container) / 12 * 8);
+    margin: auto;
+  }
+}
 @media (min-width: 992px) {
   .cta__img {
     margin-top: -15px;
@@ -1558,6 +1580,25 @@ a:hover .img-hover {
 }
 .events .slick-slider .slick-list {
   overflow: visible;
+  position: relative;
+}
+.events .slick-slider .slick-list::after {
+  position: absolute;
+  content: "";
+  border: 1px solid var(--color-grey);
+  width: 80%;
+  height: 110%;
+  z-index: -1;
+  border-radius: 8px;
+  right: 50%;
+  transform: translateX(-50%);
+  top: -20px;
+  left: 50%;
+}
+@media (max-width: 575.98px) {
+  .events .slick-slider .slick-list::after {
+    top: -12px;
+  }
 }
 .events__card {
   position: relative;
@@ -1579,6 +1620,7 @@ a:hover .img-hover {
 }
 .events__card ._img img {
   height: inherit;
+  border-radius: 8px;
 }
 .events__card ._text {
   position: absolute;
@@ -1610,5 +1652,26 @@ a:hover .img-hover {
      object-fit: contain;
 }
 .events__card ._text .icon-text .item p span {
+  color: var(--color-dark-grey);
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.icon-text .item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.icon-text .item img {
+  width: 14px;
+  height: 14px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.icon-text .item p span {
   color: var(--color-dark-grey);
 }/*# sourceMappingURL=style.css.map */

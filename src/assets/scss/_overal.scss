@@ -27,6 +27,9 @@ body {
         }
       }
     }
+    &__sidenav {
+      background: var(--bg-theme);
+    }
   }
   .small-card {
     ._img {
