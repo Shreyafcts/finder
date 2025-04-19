@@ -23,6 +23,9 @@
     padding: 32px;
     height: 100%;
     border-radius: 8px;
+    @include down-lg {
+      padding: 20px;
+    }
   }
 
   &__places {

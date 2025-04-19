@@ -31,7 +31,6 @@
       appearance: none;
       cursor: pointer;
       z-index: 40;
-      margin-left: 20px;
 
       @include down-lg {
         display: inline-block;
@@ -149,6 +148,18 @@
     }
     .btn-wrapper {
       margin-top: 0;
+      .btn-red {
+        &:hover {
+          background-color: $color-red;
+          color: $color-white;
+        }
+        img {
+          width: 16px;
+          height: 16px;
+          margin-right: 5px;
+          margin-top: -3px;
+        }
+      }
     }
     img {
       width: 20px;

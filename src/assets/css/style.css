@@ -963,7 +963,6 @@ a:hover .img-hover {
           appearance: none;
   cursor: pointer;
   z-index: 40;
-  margin-left: 20px;
 }
 @media (max-width: 991.98px) {
   .header__logo .menu-trigger {
@@ -1075,6 +1074,16 @@ a:hover .img-hover {
 }
 .header__icons .btn-wrapper {
   margin-top: 0;
+}
+.header__icons .btn-wrapper .btn-red:hover {
+  background-color: var(--color-red);
+  color: #fff;
+}
+.header__icons .btn-wrapper .btn-red img {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  margin-top: -3px;
 }
 .header__icons img {
   width: 20px;
@@ -1379,6 +1388,11 @@ a:hover .img-hover {
     width: fit-content;
   }
 }
+@media (max-width: 575.98px) {
+  .footer__email {
+    width: 100%;
+  }
+}
 .footer__email img {
   width: 16px;
 }
@@ -1390,10 +1404,20 @@ a:hover .img-hover {
     width: 100%;
   }
 }
+@media (max-width: 575.98px) {
+  .footer .btn-wrapper .btn {
+    width: 100%;
+  }
+}
 .footer__sub {
   margin-top: 50px !important;
   border-top: 1px solid var(--color-dark-grey);
   padding-top: 40px;
+}
+@media (max-width: 575.98px) {
+  .footer__sub {
+    text-align: center;
+  }
 }
 .footer__sub .footer__social {
   display: flex;
@@ -1401,6 +1425,11 @@ a:hover .img-hover {
   gap: 18px;
 }
 @media (min-width: 992px) {
+  .footer__sub .footer__social {
+    justify-content: center;
+  }
+}
+@media (max-width: 575.98px) {
   .footer__sub .footer__social {
     justify-content: center;
   }
@@ -1433,6 +1462,11 @@ a:hover .img-hover {
   padding: 32px;
   height: 100%;
   border-radius: 8px;
+}
+@media (max-width: 991.98px) {
+  .best-city__container {
+    padding: 20px;
+  }
 }
 .best-city__places {
   position: relative;
@@ -1509,6 +1543,12 @@ a:hover .img-hover {
     bottom: -90px;
   }
 }
+@media (max-width: 575.98px) {
+  .slick-slider .slick-arrow {
+    padding: 15px;
+    background-size: 5px;
+  }
+}
 .slick-slider .slick-arrow::before {
   content: "";
 }
@@ -1576,7 +1616,8 @@ a:hover .img-hover {
 }
 
 .events {
-  overflow-x: hidden;
+  overflow: hidden;
+  position: relative;
 }
 .events .slick-slider .slick-list {
   overflow: visible;
@@ -1598,6 +1639,14 @@ a:hover .img-hover {
 @media (max-width: 575.98px) {
   .events .slick-slider .slick-list::after {
     top: -12px;
+  }
+}
+.events .slick-slider .slick-arrow {
+  bottom: -100px;
+}
+@media (max-width: 575.98px) {
+  .events .slick-slider .slick-arrow {
+    bottom: -70px;
   }
 }
 .events__card {
@@ -1631,7 +1680,7 @@ a:hover .img-hover {
 }
 @media (max-width: 767.98px) {
   .events__card ._text {
-    padding: 20px;
+    padding: 15px;
   }
 }
 .events__card ._text .icon-text {

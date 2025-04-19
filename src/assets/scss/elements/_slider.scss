@@ -56,6 +56,10 @@
     @include down-lg {
       bottom: -90px;
     }
+    @include down-sm {
+      padding: 15px;
+      background-size: 5px;
+    }
     &::before {
       content: "";
     }

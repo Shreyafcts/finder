@@ -48,6 +48,9 @@
     @include down-lg {
       width: fit-content;
     }
+    @include down-sm {
+      width: 100%;
+    }
     img {
       width: 16px;
     }
@@ -60,17 +63,26 @@
       @include up-lg {
         width: 100%;
       }
+      @include down-sm {
+        width: 100%;
+      }
     }
   }
   &__sub {
     margin-top: 50px !important;
     border-top: 1px solid $color-dark-grey;
     padding-top: 40px;
+    @include down-sm {
+      text-align: center;
+    }
     .footer__social {
       display: flex;
       align-items: center;
       gap: 18px;
       @include up-lg {
+        justify-content: center;
+      }
+      @include down-sm {
         justify-content: center;
       }
       img {

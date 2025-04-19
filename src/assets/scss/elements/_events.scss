@@ -1,5 +1,6 @@
 .events {
-  overflow-x: hidden;
+  overflow: hidden;
+  position: relative;
   .slick-slider {
     .slick-list {
       overflow: visible;
@@ -19,6 +20,12 @@
         @include down-sm {
           top: -12px;
         }
+      }
+    }
+    .slick-arrow {
+      bottom: -100px;
+      @include down-sm {
+        bottom: -70px;
       }
     }
     .slick-track {
@@ -59,7 +66,7 @@
       bottom: 0;
       padding: 80px;
       @include down-md {
-        padding: 20px;
+        padding: 15px;
       }
       .icon-text {
         display: flex;
