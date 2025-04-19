@@ -13,6 +13,7 @@ import itemd4 from '../../public/img/itemd-4.svg';
 import decotop from '../../public/img/herodeco-1.svg';
 import decobottom from '../../public/img/herodeco-2.svg';
 import { useTheme } from "../context/ThemeProvider";
+import { useState, useEffect } from "react";
 
 
 const Hero = () => {
@@ -61,6 +62,20 @@ const Hero = () => {
         },
     ]
     const { darkMode } = useTheme();
+    const [searchtext, setsearchText] = useState("");
+    const [debouncedInput, setDebouncedInput] = useState("");
+    const handleInput = (e) => {
+        let val = e.target.value;
+        setsearchText(val);
+    }
+    useEffect(() => {
+        const delayTimer = setTimeout(() => {
+            setDebouncedInput(searchtext);
+        }, 500);
+        return () => {
+            clearTimeout(delayTimer);
+        }
+    }, [searchtext])
     return (
         <>
             <section className="hero standard-text _pv-100 _bg-white">
@@ -75,7 +90,7 @@ const Hero = () => {
                             <div className="hero__container">
                                 <div className="_search">
                                     <img src={seachIcon} alt="" />
-                                    <input type="text" placeholder="What are you looking for?" />
+                                    <input type="text" value={searchtext} placeholder="What are you looking for?" onChange={(e) => { handleInput(e) }} />
                                 </div>
                                 <div className="_category">
                                     <img src={catIcon} alt="" />
