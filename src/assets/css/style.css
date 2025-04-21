@@ -709,6 +709,9 @@ body {
 [data-theme=dark] .best-city__container {
   background: #1d2735;
 }
+[data-theme=dark] .hero__container ._search input {
+  color: var(--text-theme);
+}
 
 body {
   font-family: "Inter 28pt", sans-serif !important;

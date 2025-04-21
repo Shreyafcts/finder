@@ -1,8 +1,6 @@
 import { eventlist } from "../data/eventslist";
 import { NavLink } from "react-router-dom";
-import dateIcon from '../../public/img/date.svg';
 import { BsClock } from "react-icons/bs";
-import timeIcon from '../../public/img/time.svg';
 import { BsCalendar4 } from "react-icons/bs";
 import { useTheme } from "../context/ThemeProvider";
 import SlickSlider from "./SlickSlider";

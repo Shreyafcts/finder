@@ -1,7 +1,4 @@
 import { hotels } from "../data/hotels";
-import starIcon from '../../public/img/star.svg';
-import mapIcon from '../../public/img/map.svg';
-import costIcon from '../../public/img/cost.svg';
 import Headline from "./Headline";
 import IconText from "./IconText";
 import SlickSlider from "./SlickSlider";
@@ -23,20 +20,6 @@ const Vacationspot = () => {
                                         <div className="cards__body">
                                             <h4>{el.name}</h4>
                                             <IconText rating={el.rating} reviews={el.totalReviews} cost={el.cost} location={el.location} />
-                                            {/* <div className="cards__icon-text">
-                                                <div className="item">
-                                                    <img src={starIcon} alt="" />
-                                                    <p>{el.rating} <span>({el.totalReviews})</span></p>
-                                                </div>
-                                                <div className="item">
-                                                    <img src={costIcon} alt="" />
-                                                    <p>{el.cost}</p>
-                                                </div>
-                                                <div className="item">
-                                                    <img src={mapIcon} alt="" />
-                                                    <p>{el.location}</p>
-                                                </div>
-                                            </div> */}
                                         </div>
                                     </div>
                                 )
