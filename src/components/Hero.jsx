@@ -14,7 +14,8 @@ import decotop from '../../public/img/herodeco-1.svg';
 import decobottom from '../../public/img/herodeco-2.svg';
 import { useTheme } from "../context/ThemeProvider";
 import { useState, useEffect } from "react";
-
+import { BsSearch } from "react-icons/bs";
+import { BsGrid3X3 } from "react-icons/bs";
 
 const Hero = () => {
     const lightItems = [
@@ -89,11 +90,11 @@ const Hero = () => {
                             <p>Find great places to stay, eat, shop, or visit from our partners and local experts.</p>
                             <div className="hero__container">
                                 <div className="_search">
-                                    <img src={seachIcon} alt="" />
+                                    <BsSearch style={{ color: darkMode ? 'white' : 'black' }} />
                                     <input type="text" value={searchtext} placeholder="What are you looking for?" onChange={(e) => { handleInput(e) }} />
                                 </div>
                                 <div className="_category">
-                                    <img src={catIcon} alt="" />
+                                    <BsGrid3X3 style={{ color: darkMode ? 'white' : 'black' }} />
                                     <select name="cat">
                                         <option >Item-1</option>
                                         <option >Item2</option>

@@ -15,7 +15,7 @@
     z-index: -1;
     right: 0;
     bottom: 0;
-    width: calc(var(--container) / 12 * 3);
+    width: calc(var(--container) / 12 * 2.6);
     @include down-lg {
       display: none;
     }
@@ -90,6 +90,7 @@
         background-position: right center;
         padding-right: 30px;
         color: #9ca3af;
+        position: relative;
       }
     }
   }

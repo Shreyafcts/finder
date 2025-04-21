@@ -1,9 +1,12 @@
 
 import starIcon from '../../public/img/star.svg';
-import mapIcon from '../../public/img/map.svg';
-import costIcon from '../../public/img/cost.svg';
+import { BsGeoAlt } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
+import { useTheme } from '../context/ThemeProvider';
+import { BsWallet } from "react-icons/bs";
+
 const IconText = ({ rating, reviews, cost, location }) => {
+    const { darkMode } = useTheme();
     return (
         <>
             <div className="icon-text">
@@ -16,7 +19,7 @@ const IconText = ({ rating, reviews, cost, location }) => {
                 {
                     cost && (
                         <div className="item">
-                            <img src={costIcon} alt="" />
+                            <BsWallet style={{ color: darkMode ? 'white' : 'black' }} />
                             <p>{cost}</p>
                         </div>
                     )
@@ -24,7 +27,7 @@ const IconText = ({ rating, reviews, cost, location }) => {
                 {
                     location && (
                         <div className="item">
-                            <img src={mapIcon} alt="" />
+                            <BsGeoAlt style={{ color: darkMode ? 'white' : 'black' }} />
                             <p>{location}</p>
                         </div>
                     )

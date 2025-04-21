@@ -1,7 +1,10 @@
 import { eventlist } from "../data/eventslist";
 import { NavLink } from "react-router-dom";
 import dateIcon from '../../public/img/date.svg';
+import { BsClock } from "react-icons/bs";
 import timeIcon from '../../public/img/time.svg';
+import { BsCalendar4 } from "react-icons/bs";
+import { useTheme } from "../context/ThemeProvider";
 import SlickSlider from "./SlickSlider";
 const Events = () => {
     let customSliderSettings = {
@@ -28,6 +31,7 @@ const Events = () => {
             },
         ]
     }
+    const { darkMode } = useTheme();
     return (
         <>
             <section className="events standard-text _pv-100 _bg-white">
@@ -47,11 +51,11 @@ const Events = () => {
                                             <div className="_text">
                                                 <div className="icon-text">
                                                     <div className="item">
-                                                        <img src={dateIcon} alt="" />
+                                                        <BsCalendar4 style={{ color: darkMode ? 'white' : 'black' }} />
                                                         <p>{list.date}</p>
                                                     </div>
                                                     <div className="item">
-                                                        <img src={timeIcon} alt="" />
+                                                        <BsClock style={{ color: darkMode ? 'white' : 'black' }} />
                                                         <p>{list.time}</p>
                                                     </div>
                                                 </div>

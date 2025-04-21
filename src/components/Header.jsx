@@ -8,7 +8,7 @@ import accountIcon from '../../public/img/account.svg';
 import useScreenSize from '../utility/useScreenSize';
 import addIcon from '../../public/img/add.svg';
 import { useTheme } from '../context/ThemeProvider';
-
+import { BsFillPersonFill } from 'react-icons/bs';
 
 const menus = [
     {
@@ -36,6 +36,7 @@ const Header = () => {
     const handleMenuTrigger = () => {
         setMenuOpen((prev) => !prev);
     }
+
     return (
         <>
             <header className="header">
@@ -86,7 +87,7 @@ const Header = () => {
                                 {darkMode ? (<img src={darkIcon} alt="" onClick={toggleTheme} />) :
                                     <img src={themeIcon} alt="" onClick={toggleTheme} />}
                                 <NavLink to="#">
-                                    <img src={accountIcon} alt="" />
+                                    <BsFillPersonFill style={{ color: darkMode ? 'white' : 'black', width: '20px', height: '20px' }} />
                                 </NavLink>
                                 <div className="btn-wrapper">
                                     <NavLink to="#" className="btn btn-red"><img src={addIcon} alt="" /> {screenSize.width < 991 ? `Add` : `Add business`}</NavLink>
