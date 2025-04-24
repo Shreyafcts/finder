@@ -84,7 +84,7 @@ const Header = () => {
                                     <BsFillPersonFill style={{ color: darkMode ? 'white' : 'black', width: '20px', height: '20px' }} />
                                 </NavLink>
                                 <div className="btn-wrapper">
-                                    <NavLink to="#" className="btn btn-red"><img src="/img/add.svg'" alt="" /> {screenSize.width < 991 ? `Add` : `Add business`}</NavLink>
+                                    <NavLink to="#" className="btn btn-red"><img src="/img/add.svg" alt="" /> {screenSize.width < 991 ? `Add` : `Add business`}</NavLink>
                                 </div>
                             </div>
 
