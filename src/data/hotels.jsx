@@ -1,6 +1,3 @@
-// import hotel1 from '../../public/img/hotel-1.jpg';
-// import hotel2 from '../../public/img/hotel-2.jpg';
-// import hotel3 from '../../public/img/hotel-3.jpg';
 
 export const hotels = [
     {

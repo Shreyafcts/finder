@@ -1,5 +1,3 @@
-// import googleplay from "../../public/img/googleplay.svg";
-// import mobile from "../../public/img/mobile.svg";
 import { NavLink } from "react-router-dom";
 const Cta = () => {
     return (

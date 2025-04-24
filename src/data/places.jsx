@@ -1,4 +1,3 @@
-// import place1 from '../../public/img/place-1.jpg'
 
 export const places = [
     {

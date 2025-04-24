@@ -1,17 +1,4 @@
 import { NavLink } from "react-router-dom";
-// import seachIcon from '../../public/img/search.svg';
-// import catIcon from '../../public/img/category.svg';
-// import item1 from '../../public/img/item-1.svg';
-// import item2 from '../../public/img/item-2.jpg';
-// import item3 from '../../public/img/item-3.svg';
-// import item4 from '../../public/img/item-4.svg';
-// import item5 from '../../public/img/item-5.svg';
-// import itemd1 from '../../public/img/itemd-1.svg';
-// import itemd2 from '../../public/img/itemd-2.svg';
-// import itemd3 from '../../public/img/itemd-3.svg';
-// import itemd4 from '../../public/img/itemd-4.svg';
-// import decotop from '../../public/img/herodeco-1.svg';
-// import decobottom from '../../public/img/herodeco-2.svg';
 import { useTheme } from "../context/ThemeProvider";
 import { useState, useEffect } from "react";
 import { BsSearch } from "react-icons/bs";

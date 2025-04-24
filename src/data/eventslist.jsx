@@ -1,5 +1,3 @@
-import event1 from '../../public/img/event-1.jpg';
-import event2 from '../../public/img/event-2.jpg'
 
 export const eventlist = [
     {

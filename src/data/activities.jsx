@@ -1,7 +1,3 @@
-// //import act1 from '../../public/img/activity-1.jpg';
-// import act2 from '../../public/img/activity-2.jpg';
-// import act3 from '../../public/img/activity-3.jpg';
-// import act4 from '../../public/img/activity-4.jpg';
 
 export const activities = [
     {

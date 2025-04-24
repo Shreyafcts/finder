@@ -1,4 +1,3 @@
-// import personDeco from '../../public/img/person.svg';
 import { restaurantlist } from '../data/restaurantlist ';
 import { places } from '../data/places';
 import Headline from './Headline';

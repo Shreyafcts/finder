@@ -1,5 +1,4 @@
 
-import starIcon from '../../public/img/star.svg';
 import IconText from './IconText';
 
 const SmallCards = ({ list, type }) => {
@@ -14,7 +13,7 @@ const SmallCards = ({ list, type }) => {
                 <div className="small-card__info">
                     <h5>{name}</h5>
                     <div className="item">
-                        <img src={starIcon} alt="" />
+                        <img src="/img/star.svg" alt="" />
                         <p>{rating} <span>({totalReviews})</span></p>
                     </div>
                     <IconText cost={cost} location={location} />

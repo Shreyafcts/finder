@@ -1,11 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
-import headerLogo from '../../public/img/header-logo.svg';
-import footerLogo from '../../public/img/footerlogo.svg';
-import themeIcon from '../../public/img/light.svg';
-import darkIcon from '../../public/img/dark.svg';
 import useScreenSize from '../utility/useScreenSize';
-import addIcon from '../../public/img/add.svg';
 import { useTheme } from '../context/ThemeProvider';
 import { BsFillPersonFill } from 'react-icons/bs';
 

@@ -1,7 +1,5 @@
 
-import starIcon from '../../public/img/star.svg';
 import { BsGeoAlt } from "react-icons/bs";
-import { NavLink } from "react-router-dom";
 import { useTheme } from '../context/ThemeProvider';
 import { BsWallet } from "react-icons/bs";
 
@@ -12,7 +10,7 @@ const IconText = ({ rating, reviews, cost, location }) => {
             <div className="icon-text">
                 {rating &&
                     <div className="item">
-                        <img src={starIcon} alt="" />
+                        <img src="/img/star.svg" alt="" />
                         <p>{rating}<span>({reviews})</span></p>
                     </div>
                 }

@@ -1,7 +1,3 @@
-// import footerLogo from '../../public/img/footerlogo.svg';
-// import emailIcon from '../../public/img/mail.svg';
-// import phoneIcon from '../../public/img/phone.svg';
-// import instaIcon from '../../public/img/insta.svg'
 
 import { NavLink } from 'react-router-dom';
 const Footer = () => {

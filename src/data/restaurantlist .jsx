@@ -1,9 +1,4 @@
 
-// import eat1 from '../../public/img/eat-1.svg';
-// import eat2 from '../../public/img/eat-2.svg';
-// import eat3 from '../../public/img/eat-3.svg';
-// import eat4 from '../../public/img/eat-4.svg';
-
 export const restaurantlist = [
     {
         img: '/img/eat-1.svg',

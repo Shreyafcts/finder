@@ -1,5 +1,5 @@
 
-import img1 from "../../public/img/item-6.jpg";
+
 export const newplaces = [
     {
         img: '/img/item-6.jpg',
