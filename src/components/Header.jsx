@@ -48,7 +48,7 @@ const Header = () => {
                                     <span></span>
                                     <span></span>
                                 </div>
-                                {darkMode ? (<img src={footerLogo} alt="" />) : (<img src={headerLogo} alt="" />)}
+                                {darkMode ? (<img src='/img/footerlogo.svg' alt="" />) : (<img src="/img/header-logo.svg" alt="" />)}
                             </div>
                             <div className={`header__sidenav${menuOpen ? ' open' : ''}`}>
                                 <div className="navbar">
@@ -83,13 +83,13 @@ const Header = () => {
                         </div>
                         <div className="col-7 col-lg-3">
                             <div className="header__icons">
-                                {darkMode ? (<img src={darkIcon} alt="" onClick={toggleTheme} />) :
-                                    <img src={themeIcon} alt="" onClick={toggleTheme} />}
+                                {darkMode ? (<img src="/img/dark.svg" alt="" onClick={toggleTheme} />) :
+                                    <img src="/img/light.svg" alt="" onClick={toggleTheme} />}
                                 <NavLink to="#">
                                     <BsFillPersonFill style={{ color: darkMode ? 'white' : 'black', width: '20px', height: '20px' }} />
                                 </NavLink>
                                 <div className="btn-wrapper">
-                                    <NavLink to="#" className="btn btn-red"><img src={addIcon} alt="" /> {screenSize.width < 991 ? `Add` : `Add business`}</NavLink>
+                                    <NavLink to="#" className="btn btn-red"><img src="/img/add.svg'" alt="" /> {screenSize.width < 991 ? `Add` : `Add business`}</NavLink>
                                 </div>
                             </div>
 

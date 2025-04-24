@@ -1,17 +1,17 @@
 import { NavLink } from "react-router-dom";
-import seachIcon from '../../public/img/search.svg';
-import catIcon from '../../public/img/category.svg';
-import item1 from '../../public/img/item-1.svg';
-import item2 from '../../public/img/item-2.jpg';
-import item3 from '../../public/img/item-3.svg';
-import item4 from '../../public/img/item-4.svg';
-import item5 from '../../public/img/item-5.svg';
-import itemd1 from '../../public/img/itemd-1.svg';
-import itemd2 from '../../public/img/itemd-2.svg';
-import itemd3 from '../../public/img/itemd-3.svg';
-import itemd4 from '../../public/img/itemd-4.svg';
-import decotop from '../../public/img/herodeco-1.svg';
-import decobottom from '../../public/img/herodeco-2.svg';
+// import seachIcon from '../../public/img/search.svg';
+// import catIcon from '../../public/img/category.svg';
+// import item1 from '../../public/img/item-1.svg';
+// import item2 from '../../public/img/item-2.jpg';
+// import item3 from '../../public/img/item-3.svg';
+// import item4 from '../../public/img/item-4.svg';
+// import item5 from '../../public/img/item-5.svg';
+// import itemd1 from '../../public/img/itemd-1.svg';
+// import itemd2 from '../../public/img/itemd-2.svg';
+// import itemd3 from '../../public/img/itemd-3.svg';
+// import itemd4 from '../../public/img/itemd-4.svg';
+// import decotop from '../../public/img/herodeco-1.svg';
+// import decobottom from '../../public/img/herodeco-2.svg';
 import { useTheme } from "../context/ThemeProvider";
 import { useState, useEffect } from "react";
 import { BsSearch } from "react-icons/bs";
@@ -20,45 +20,45 @@ import { BsGrid3X3 } from "react-icons/bs";
 const Hero = () => {
     const lightItems = [
         {
-            img: item1,
+            img: '/img/item-1.svg',
             title: "Accommodation",
         },
         {
-            img: item2,
+            img: '/img/item-2.jpg',
             title: "Shopping",
         },
         {
-            img: item3,
+            img: '/img/item-3.svg',
             title: "Food & Drink",
         },
         {
-            img: item4,
+            img: '/img/item-4.svg',
             title: "Entertainment",
         },
         {
-            img: item5,
+            img: '/img/item-5.svg',
             title: "Health",
         },
     ]
     const darkItems = [
         {
-            img: itemd1,
+            img: '/img/itemd-1.svg',
             title: "Accommodation",
         },
         {
-            img: itemd2,
+            img: '/img/itemd-2.svg',
             title: "Shopping",
         },
         {
-            img: itemd3,
+            img: '/img/itemd-3.svg',
             title: "Food & Drink",
         },
         {
-            img: itemd4,
+            img: '/img/itemd-4.svg',
             title: "Entertainment",
         },
         {
-            img: itemd1,
+            img: '/img/itemd-1.svg',
             title: "Health",
         },
     ]
@@ -81,7 +81,7 @@ const Hero = () => {
         <>
             <section className="hero standard-text _pv-100 _bg-white">
                 <div className="hero__deco-top">
-                    <img src={decotop} alt="" />
+                    <img src="/img/herodeco-1.svg" alt="" />
                 </div>
                 <div className="container">
                     <div className="row justify-content-center text-center">
@@ -107,9 +107,9 @@ const Hero = () => {
                                 </div>
                             </div>
                             <div className="hero__items">
-                                {(darkMode ? darkItems : lightItems).map((el) => {
+                                {(darkMode ? darkItems : lightItems).map((el, index) => {
                                     return (
-                                        <div key={el.index} className="_item">
+                                        <div key={index} className="_item">
                                             <img src={el.img} alt="" />
                                             <span>{el.title}</span>
                                         </div>
@@ -120,7 +120,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="hero__deco-bottom">
-                    <img src={decobottom} alt="" />
+                    <img src="/img/herodeco-2.svg" alt="" />
                 </div>
             </section>
         </>

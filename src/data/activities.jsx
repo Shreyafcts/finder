@@ -1,11 +1,11 @@
-import act1 from '../../public/img/activity-1.jpg';
-import act2 from '../../public/img/activity-2.jpg';
-import act3 from '../../public/img/activity-3.jpg';
-import act4 from '../../public/img/activity-4.jpg';
+// //import act1 from '../../public/img/activity-1.jpg';
+// import act2 from '../../public/img/activity-2.jpg';
+// import act3 from '../../public/img/activity-3.jpg';
+// import act4 from '../../public/img/activity-4.jpg';
 
 export const activities = [
     {
-        img: act1,
+        img: '/img/activity-1.jpg',
         category: "Entertainment",
         name: "Barcelona National Zoo",
         description: "Discover fascinating animals and a fun-filled adventure for the whole family.",
@@ -15,7 +15,7 @@ export const activities = [
         price: 20,
     },
     {
-        img: act2,
+        img: '/img/activity-2.jpg',
         category: "Entertainment",
         name: "Barcelona National Zoo",
         description: "Discover fascinating animals and a fun-filled adventure for the whole family.",
@@ -25,7 +25,7 @@ export const activities = [
         price: 20,
     },
     {
-        img: act2,
+        img: '/public/img/activity-3.jpg',
         category: "Entertainment",
         name: "Barcelona National Zoo",
         description: "Discover fascinating animals and a fun-filled adventure for the whole family.",
@@ -35,7 +35,7 @@ export const activities = [
         price: 20,
     },
     {
-        img: act3,
+        img: '/public/img/activity-3.jpg',
         category: "Entertainment",
         name: "Barcelona National Zoo",
         description: "Discover fascinating animals and a fun-filled adventure for the whole family.",
@@ -45,7 +45,7 @@ export const activities = [
         price: 20,
     },
     {
-        img: act3,
+        img: '/public/img/activity-3.jpg',
         category: "Entertainment",
         name: "Barcelona National Zoo",
         description: "Discover fascinating animals and a fun-filled adventure for the whole family.",

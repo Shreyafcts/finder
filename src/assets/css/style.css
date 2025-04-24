@@ -927,7 +927,7 @@ a:hover .img-hover {
 .btn-wrapper .link::after {
   position: absolute;
   content: "";
-  background-image: url("../../../public/img/side-arrow.svg");
+  background-image: url("/img/side-arrow.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -1546,7 +1546,7 @@ a:hover .img-hover {
   z-index: 5;
   top: unset;
   bottom: -120px;
-  background-image: url("../../../public/img/side-arrow.svg") !important;
+  background-image: url("/img/side-arrow.svg") !important;
   background-position: center center !important;
   background-size: 7px !important;
   background-repeat: no-repeat !important;
@@ -1572,7 +1572,7 @@ a:hover .img-hover {
 .slick-slider .slick-arrow.slick-prev {
   right: 50%;
   left: auto;
-  background-image: url("../../../public/img/prev.svg") !important;
+  background-image: url("/img/prev.svg") !important;
 }
 .slick-slider .slick-arrow.slick-next {
   right: calc(50% - 50px);

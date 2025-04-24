@@ -1,0 +1,1 @@
+//export const IMAGE_URI = process.env.PUBLIC_URL;

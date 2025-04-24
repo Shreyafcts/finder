@@ -1,12 +1,12 @@
 
-import eat1 from '../../public/img/eat-1.svg';
-import eat2 from '../../public/img/eat-2.svg';
-import eat3 from '../../public/img/eat-3.svg';
-import eat4 from '../../public/img/eat-4.svg';
+// import eat1 from '../../public/img/eat-1.svg';
+// import eat2 from '../../public/img/eat-2.svg';
+// import eat3 from '../../public/img/eat-3.svg';
+// import eat4 from '../../public/img/eat-4.svg';
 
 export const restaurantlist = [
     {
-        img: eat1,
+        img: '/img/eat-1.svg',
         name: "McDonald's",
         rating: 4.9,
         totalReviews: 836,
@@ -14,7 +14,7 @@ export const restaurantlist = [
         location: "1.4 km from center",
     },
     {
-        img: eat2,
+        img: '/img/eat-2.svg',
         name: "Hard Rock Cafe",
         rating: 4.9,
         totalReviews: 836,
@@ -22,7 +22,7 @@ export const restaurantlist = [
         location: "1.4 km from center",
     },
     {
-        img: eat1,
+        img: '/img/eat-1.svg',
         name: "McDonald's",
         rating: 4.9,
         totalReviews: 836,
@@ -30,7 +30,7 @@ export const restaurantlist = [
         location: "1.4 km from center",
     },
     {
-        img: eat2,
+        img: '/img/eat-2.svg',
         name: "Hard Rock Cafe",
         rating: 4.9,
         totalReviews: 836,
@@ -38,7 +38,7 @@ export const restaurantlist = [
         location: "1.4 km from center",
     },
     {
-        img: eat1,
+        img: '/img/eat-1.svg',
         name: "McDonald's",
         rating: 4.9,
         totalReviews: 836,
@@ -46,7 +46,7 @@ export const restaurantlist = [
         location: "1.4 km from center",
     },
     {
-        img: eat2,
+        img: '/img/eat-2.svg',
         name: "Hard Rock Cafe",
         rating: 4.9,
         totalReviews: 836,
@@ -54,7 +54,7 @@ export const restaurantlist = [
         location: "1.4 km from center",
     },
     {
-        img: eat1,
+        img: '/img/eat-1.svg',
         name: "McDonald's",
         rating: 4.9,
         totalReviews: 836,
@@ -62,7 +62,7 @@ export const restaurantlist = [
         location: "1.4 km from center",
     },
     {
-        img: eat2,
+        img: '/img/eat-2.svg',
         name: "Hard Rock Cafe",
         rating: 4.9,
         totalReviews: 836,
@@ -70,7 +70,7 @@ export const restaurantlist = [
         location: "1.4 km from center",
     },
     {
-        img: eat1,
+        img: '/img/eat-1.svg',
         name: "McDonald's",
         rating: 4.9,
         totalReviews: 836,
@@ -78,7 +78,7 @@ export const restaurantlist = [
         location: "1.4 km from center",
     },
     {
-        img: eat2,
+        img: '/img/eat-2.svg',
         name: "Hard Rock Cafe",
         rating: 4.9,
         totalReviews: 836,
@@ -86,7 +86,7 @@ export const restaurantlist = [
         location: "1.4 km from center",
     },
     {
-        img: eat1,
+        img: '/img/eat-1.svg',
         name: "McDonald's",
         rating: 4.9,
         totalReviews: 836,
@@ -94,7 +94,7 @@ export const restaurantlist = [
         location: "1.4 km from center",
     },
     {
-        img: eat2,
+        img: '/img/eat-2.svg',
         name: "Hard Rock Cafe",
         rating: 4.9,
         totalReviews: 836,
@@ -102,7 +102,7 @@ export const restaurantlist = [
         location: "1.4 km from center",
     },
     {
-        img: eat1,
+        img: '/img/eat-1.svg',
         name: "McDonald's",
         rating: 4.9,
         totalReviews: 836,
@@ -110,7 +110,7 @@ export const restaurantlist = [
         location: "1.4 km from center",
     },
     {
-        img: eat2,
+        img: '/img/eat-2.svg',
         name: "Hard Rock Cafe",
         rating: 4.9,
         totalReviews: 836,
@@ -118,7 +118,7 @@ export const restaurantlist = [
         location: "1.4 km from center",
     },
     {
-        img: eat1,
+        img: '/img/eat-1.svg',
         name: "McDonald's",
         rating: 4.9,
         totalReviews: 836,
@@ -126,7 +126,7 @@ export const restaurantlist = [
         location: "1.4 km from center",
     },
     {
-        img: eat2,
+        img: '/img/eat-2.svg',
         name: "Hard Rock Cafe",
         rating: 4.9,
         totalReviews: 836,
@@ -134,7 +134,7 @@ export const restaurantlist = [
         location: "1.4 km from center",
     },
     {
-        img: eat1,
+        img: '/img/eat-1.svg',
         name: "McDonald's",
         rating: 4.9,
         totalReviews: 836,
@@ -142,7 +142,7 @@ export const restaurantlist = [
         location: "1.4 km from center",
     },
     {
-        img: eat2,
+        img: '/img/eat-2.svg',
         name: "Hard Rock Cafe",
         rating: 4.9,
         totalReviews: 836,
@@ -152,7 +152,7 @@ export const restaurantlist = [
     {
         topRestaurant: [
             {
-                img: eat3,
+                img: '/img/eat-3.svg',
                 name: "Mado",
                 rating: 4.9,
                 totalReviews: 836,
@@ -160,7 +160,7 @@ export const restaurantlist = [
                 location: "1.4 km from center",
             },
             {
-                img: eat4,
+                img: '/img/eat-4.svg',
                 name: "Mado",
                 rating: 4.9,
                 totalReviews: 836,
@@ -168,7 +168,7 @@ export const restaurantlist = [
                 location: "1.4 km from center",
             },
             {
-                img: eat3,
+                img: '/img/eat-3.svg',
                 name: "TacoTime",
                 rating: 4.9,
                 totalReviews: 836,
@@ -176,7 +176,7 @@ export const restaurantlist = [
                 location: "1.4 km from center",
             },
             {
-                img: eat4,
+                img: '/img/eat-4.svg',
                 name: "Mado",
                 rating: 4.9,
                 totalReviews: 836,

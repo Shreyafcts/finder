@@ -1,4 +1,4 @@
-import personDeco from '../../public/img/person.svg';
+// import personDeco from '../../public/img/person.svg';
 import { restaurantlist } from '../data/restaurantlist ';
 import { places } from '../data/places';
 import Headline from './Headline';
@@ -34,7 +34,7 @@ const BestOfCity = () => {
                                     )
                                 })}
                                 <div className="deco-item">
-                                    <img src={personDeco} alt="" />
+                                    <img src="/img/person.svg" alt="" />
                                 </div>
                             </div>
                         </div>

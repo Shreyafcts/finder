@@ -1,5 +1,5 @@
-import googleplay from "../../public/img/googleplay.svg";
-import mobile from "../../public/img/mobile.svg";
+// import googleplay from "../../public/img/googleplay.svg";
+// import mobile from "../../public/img/mobile.svg";
 import { NavLink } from "react-router-dom";
 const Cta = () => {
     return (
@@ -16,16 +16,16 @@ const Cta = () => {
                         <div className="col-lg-4">
                             <div className="cta__links">
                                 <NavLink to="#">
-                                    <img src={googleplay} alt="" />
+                                    <img src="/img/googleplay.svg" alt="" />
                                 </NavLink>
                                 <NavLink to="#">
-                                    <img src={googleplay} alt="" />
+                                    <img src="/img/googleplay.svg" alt="" />
                                 </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-4">
                             <div className="cta__img">
-                                <img src={mobile} alt="" />
+                                <img src="/img/mobile.svg" alt="" />
                             </div>
                         </div>
                     </div>
