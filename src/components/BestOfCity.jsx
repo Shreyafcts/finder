@@ -15,8 +15,8 @@ const BestOfCity = () => {
                                 <h3>Top restaurants</h3>
                                 {topRestaurant.slice(0, 3).map((list, index) => {
                                     return (
-                                        <div className="best-city__items">
-                                            <SmallCards list={list} key={index} type="toplist" />
+                                        <div className="best-city__items" key={index}>
+                                            <SmallCards list={list} type="toplist" />
                                         </div>
                                     )
                                 })}
@@ -27,8 +27,8 @@ const BestOfCity = () => {
                                 <h3>Places to visit</h3>
                                 {places.slice(0, 3).map((list, index) => {
                                     return (
-                                        <div className="best-city__items">
-                                            <SmallCards list={list} key={index} type="place" />
+                                        <div className="best-city__items" key={index}>
+                                            <SmallCards list={list} type="place" />
                                         </div>
                                     )
                                 })}

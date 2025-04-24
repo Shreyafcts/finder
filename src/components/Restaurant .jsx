@@ -10,8 +10,8 @@ const Restaurant = ({ maxPost }) => {
                     <div className="row gap-20">
                         {restaurantlist.slice(0, maxPost).map((list, index) => {
                             return (
-                                <div className="col-md-6 col-lg-4">
-                                    <SmallCards list={list} key={index} />
+                                <div className="col-md-6 col-lg-4" key={index}>
+                                    <SmallCards list={list} />
                                 </div>
                             )
                         })}

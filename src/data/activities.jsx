@@ -21,7 +21,7 @@ export const activities = [
         price: 20,
     },
     {
-        img: '/public/img/activity-3.jpg',
+        img: '/img/activity-3.jpg',
         category: "Entertainment",
         name: "Barcelona National Zoo",
         description: "Discover fascinating animals and a fun-filled adventure for the whole family.",
@@ -31,7 +31,7 @@ export const activities = [
         price: 20,
     },
     {
-        img: '/public/img/activity-3.jpg',
+        img: '/img/activity-3.jpg',
         category: "Entertainment",
         name: "Barcelona National Zoo",
         description: "Discover fascinating animals and a fun-filled adventure for the whole family.",
@@ -41,7 +41,7 @@ export const activities = [
         price: 20,
     },
     {
-        img: '/public/img/activity-3.jpg',
+        img: '/img/activity-3.jpg',
         category: "Entertainment",
         name: "Barcelona National Zoo",
         description: "Discover fascinating animals and a fun-filled adventure for the whole family.",
